@@ -1,11 +1,11 @@
-import UseRefExample2 from "./Components/useRefExample2"
+import UseRefExample3 from "./Components/UseRefExample3"
 import "./App.css";
 
 function App() {
   return (
     <div>
       <h1>Hello Diane</h1>
-      <UseRefExample2 />
+      <UseRefExample3 />
     </div>
   );
 }
