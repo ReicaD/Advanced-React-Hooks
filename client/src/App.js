@@ -1,11 +1,11 @@
-import UseMemoEg from "./Components/UseMemoEg"
+import UseCallBackEg from "./Components/UseCallBackEg"
 import "./App.css";
 
 function App() {
   return (
     <div>
       <h1>Hello Diane</h1>
-      <UseMemoEg />
+      <UseCallBackEg />
     </div>
   );
 }
