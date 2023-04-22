@@ -6,6 +6,7 @@ function UseMemoEg() {
   const [inc, setInc] = useState(0);
   //adding an inExpensive function to run the sqrt of number on state by usng a for loop
   //const sqrt = getSqrt(number);
+  //this will return the memorised function
   const sqrt = useMemo(() => getSqrt(number), [number]);
 
   const renders = useRef(1);
@@ -36,6 +37,7 @@ function UseMemoEg() {
     </div>
   );
 }
+
 function getSqrt(n) {
   for (let i = 0; i <= 10000; i++) {
     console.log(i);
