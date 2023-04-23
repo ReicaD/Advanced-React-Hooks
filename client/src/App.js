@@ -1,11 +1,11 @@
-import UseCallBackEg from "./Components/UseCallBackEg"
+import CustomHook from "./Components/CustomHook"
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="container mt-5">
       <h1>Hello Diane</h1>
-      <UseCallBackEg />
+      <CustomHook />
     </div>
   );
 }
