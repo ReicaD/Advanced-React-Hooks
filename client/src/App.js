@@ -1,4 +1,4 @@
-import CustomHookLocal  from "./Components/CustomHookLocal"
+import CustomHookLocal from "./Components/CustomHookLocal";
 import "./App.css";
 
 function App() {
