@@ -23,4 +23,4 @@ function getLocalStorageValue(key, initialValue) {
 export default UseLocalStorage;
 
 
-//note: in the browser everything that is passed in the form should be saved in the local storage
+//Note: in the browser everything that is passed in the form should be saved in the local storage
