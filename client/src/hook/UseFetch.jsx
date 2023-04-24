@@ -1,4 +1,4 @@
-import { useState, UseEffect, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function UseFetch(url, options) {
   const [loading, setLoading] = useState(true);
@@ -9,17 +9,17 @@ function UseFetch(url, options) {
       try {
         const response = await fetch(url, options);
         const data = await response.json();
-        setData();
-        setLoading(true);
+        setData(data);
+        setLoading(false);
       } catch (error) {
         setError(error);
-        setLoading(false)
+        setLoading(false);
       }
     };
     fetchData();
     // eslint-disable-next-line/ react hooks / exhaustive-deps
-  },[]);
-  return {data,loading,error}
+  }, []);
+  return { data, loading, error };
 }
 
 export default UseFetch;
