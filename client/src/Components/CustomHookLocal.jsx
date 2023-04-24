@@ -1,10 +1,10 @@
 import UseLocalStorage from "../hook/UseLocalStorage";
-
-
+//task is a key passed from our local storage state
 function CustomHookLocal() {
   const [task, setTask] = UseLocalStorage("task","");
+  const [tasks, setTasks] = UseLocalStorage("tasks","");
   return (
-    <form className="w-25">
+    <form className="w-50">
       <div className="mb-3">
         <label className="form-label">
           <input
